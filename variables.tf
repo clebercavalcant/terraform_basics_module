@@ -10,21 +10,6 @@ variable "region_name" {
   description = "AWS region"
   default = "us-east-1"
 }
-
-variable "aws_shared_credential_files" {
-  type        = string
-  description = "Credentials file to authenticate on aws dev-monetizze account"
-  default     = "/home/clebercavalcanti/.aws/credentials"
-
-}
-
-variable "secret_key" {
-  type        = string
-  description = "Credentials file to authenticate on aws dev-monetizze account"
-  default     = "/home/clebercavalcanti/.aws/credentials"
-  
-}
-
 #Módulo de criação da Ec2
 
 variable "ami_instance" {
