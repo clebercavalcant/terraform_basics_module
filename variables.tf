@@ -6,11 +6,11 @@
 
 # Módulos de acesso a ambientes
 variable "region_name" {
-  type = string
-  description = "AWS region"
-  default = "us-east-1"
+  type        = string
+  description = "Região AWS"
+  default     = "us-east-1"
 }
-#Módulo de criação da Ec2
+#Módulo de criação da Ec2 e volume EBS
 
 variable "ami_instance" {
   type        = string
@@ -22,7 +22,7 @@ variable "ami_instance" {
 #Módulo de declaração/criação da VPC
 
 variable "vpc_cidr_block" {
-  description = "CIDR block for VPC"
-  type = string  
-  default = "172.29.0.0/19"
-}
+  description = "Bloco CIDR para VPC"
+  type        = string
+  default     = "172.29.0.0/19"
+  }
